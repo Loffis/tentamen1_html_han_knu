@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Author" content="Hans-Olov Knutsson">
+    <!--
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    -->
+         <link rel="stylesheet" href="style.css">
+    <title>tentamen1_han_knu</title>
+</head>
+<body>
+    <nav title="Navigation">
+        <ul id="links">
+            <li class="list-style"><a href="http://www.github.com" target="_blank" title="Github">Github</a></li>
+            <li class="list-style"><a href="http://www.getbootstrap.com" target="_blank" title="Bootstrap">Bootstrap</a></li>
+            <li class="list-style"><a href="http://www.w3schools.com" target="_blank" title="W3schools">W3schools</a></li>
+        </ul>
+    </nav>
+    <br><br>
+    <table title="Tabell med valuta, land och språk">
+        <tr>
+            <th>Valuta</th>
+            <th>Land</th>
+            <th>Språk</th>
+        </tr>
+        <tr>
+            <td>SEK</td>
+            <td>Sverige</td>
+            <td>Svenska</td>
+        </tr>
+        <tr>
+            <td>DKK</td>
+            <td>Danmark</td>
+            <td>Danska</td>
+        </tr>
+        <tr>
+            <td>NOK</td>
+            <td>Norge</td>
+            <td>Norska</td>
+        </tr>
+    </table>
+    <br><br>
+    <div id="container-bigblue" title="Blue container">
+        <div id="container-above" title="Green container">
+            <h1>Above</h1>
+        </div>
+        <div id="container-under" title="Red container">
+            <h1>Under</h1>
+        </div>
+    </div>
+    <br><br>
+    <div class="btn-group" title="Button group">
+            <button type="button" class="btn btn-primary" title="Button 1">Button 1</button>
+            <button type="button" class="btn btn-primary" title="Button 2">Button 2</button>
+            <button type="button" class="btn btn-primary" title="Button 3">Button 3</button>
+            <button type="button" class="btn btn-primary" title="Button 4">Button 4</button>
+    </div>
+    <br><br>
+    <ul class="list-group" title="List group">
+        <li class="list-group-item" title="List item 1">list item 1</li>
+        <li class="list-group-item" title="List item 2">list item 2</li>
+        <li class="list-group-item active" title="List item 3">list item 3</li>
+        <li class="list-group-item" title="List item 4">list item 4</li>
+    </ul>
+    <br><br>
+    <h2>SEO</h2>
+    <ol>
+        <li>Använda metataggarna "keyword" och "description"</li>
+        <li>Använda sina nyckelord rikligt i text på webplatsen</li>
+        <li>Använda nyckelord i sidtitlar</li>
+        <li>Bygga sidan på ett korrekt sätt. Göra en sitemap o skicka till Google.</li>
+        <li>Använda nyckelord i headings</li>
+        <li>Använda nyckelord i "alt" och "title" vid användning av tex bilder</li>
+    </ol>
+    <h2>SEO och nyckelord</h2>
+    <p>Man ska försöka ha så annorlunda sökord som möjligt, men ändå ord som gör att
+        användarna hittar till sidan. Ta ordet "musik" t.ex. Användarna kommer troligen hamna
+        hos Spotify eller liknande sida om de söker på det. Men "småländsk musik", eller
+        vad det nu är man håller på med, kommer generera fler sökträffar.
+    </p>
+    <h2>Nätverk</h2>
+    <p>När man knappar in "www.google.se" i sin webbläsare så skickas denna textsträng
+        till ens router, som är uppkopplad genom en ISP till Internet. Textsträngen
+        skickas till en DNS-server som översätter denna till en IP-adress. IPv4 är den gamla
+        och vanligaste standarden och har högsta värdet 255.255.255.255. Då det börjar bli
+        tight med lediga nummer har IPv6 införts sedan en tid tillbaka, vilket kommer lösa
+        detta problem. När IP-adress fåtts så kontaktas servern med denna adress. Ofta kan detta gå i flera
+        steg, genom flera servrar. Datan skickas sedan till användaren genom ofta flera servrar
+        tillbaka.
+
+    </p>
+    <h2>Responsiv webbdesign</h2>
+    <p>Responsiv webbdesign innebär att man bygger sin webbplats så att "alla" möjliga
+        användare ska kunna ta del av all information på sidan. En smartphone har betydligt
+        mindre skärm en en vanlig monitor, och monitorer i sin tur finns det i många olika
+        storlekar. För smartphone-användaren ska kunna se hela sidan krävs en version som 
+        är mindre i storlek. Denna storlek skulle se löjlig ut på en 24-tumsmonitor, därför
+        måste även de användarna ha en version för att upplevelsen ska bli fulländad. Gör
+        man en webbplats som anpassar sig efter smartphones, tablets samt monitorer i olika
+        storlekar så ökar chansen att användarna känner sig nöjda med webbplatsen.<br>
+        Till att börja med så är det viktigt att ha med metataggen "viewport". Bilder och text
+        kan storleksbestämmas tex genom % av viewporten, istället för absoluta värden såsom px.
+        Då förändras dessa element när fönsret har olika storlekar. Media queries är ett annat
+        sätt. Här kan man bestämma hur element ska se ut vid olika skärmstorlekar. Ett annat sätt
+        är att använda sig av "float". Tycker man det är bökigt så finns det färdiga ramverk.
+        Bootstrap är ett av dessa. Just Bootstrap baserar sig på att sidan är 12 kolumner bred,
+        sedan fyller man varje "rad" på sidan med valfria element/tomrum. En stor skärm kan då
+        visa alla 12 kolumnerna i bredd, medan en smartphone istället kanske bara visar en eller
+        två i bredd, och lägger de "på hög" istället.
+    </p>
+    <h2>Review</h2>
+    <p>Alla paragrafer kommer hamna i 0,0 dvs längst upp till vänster, ovanpå varandra.
+        Detta eftersom "top" och "bottom" är "0px" båda två och "position" är "absolute". 
+        "image.png" kommer också hamna i 0,0 eftersom den ligger i en paragraf.<br>
+        I HTML-koden anges både klasser och id:n, men inget av detta används under style.<br>
+        Ingen "nav" finns, bara en div med id "nav".<br>
+        Länkarna i "nav" har "kodaren" :) snurrat till och länkat till filer på datorns skrivbord.
+        Troligen kör inte denna jeppe en egen webserver, så ingen kommer någonsin att kunna se 
+        dessa sidor.<br>
+        Bilden som ska visas kommer nog läggas sig över allting i stort sett eftersom den sitter
+        uppe i 0,0.<br>
+        input type "email" bör användas då man frågar efter epostadress.<br>
+        Vad ska man hitta på när man fyllt i namn, epost och ämne? Sitta och vänta är allt man
+        kan göra, för inget mer kommer att hända. En submit-knapp här hade passat fint.<br>
+        I footern finns lite style-kod. Eftersom style redan finns i "head" så lägger man alla
+        style:arna där förslagsvis.<br>
+        "span" finns runt telefonnumret. Bättre att välja href="tel:047099999">0470-99999 så
+        blir telefonnumret klickbart och det går att ringa via datorn/smartphonen.<br>
+        Bilden som ska visas ligger i rotmappen. Bättre att lägga i en image- eller media-mapp.<br>
+
+    </p>
+</body>
+</html>
